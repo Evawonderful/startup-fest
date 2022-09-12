@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import { useContext } from "react";
+import Navbar from "./components/Navbar";
+import { ThemeContext } from "./contexts/theme";
 import './App.css';
+import {Fab} from '@mui/material';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness5Icon from '@mui/icons-material/Brightness5';
+import Hero from "./components/Hero";
+import CountDown from "./components/CountDown";
+
 
 function App() {
+  const [{theme, isDark}, toggleTheme] = useContext(ThemeContext);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app"
+      style={{backgroundColor: theme.backgroundColor, color: theme.color}}>
+        <Navbar/>
+        <Hero/>
+        <CountDown/>
+
+
+        
+        <Fab className="fabstyle" size="large" color={theme.color} aria-label="toggleTheme" onClick={toggleTheme}>{isDark ? <Brightness5Icon/> : <Brightness4Icon/>}</Fab>
+        
+       
     </div>
   );
 }

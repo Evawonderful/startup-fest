@@ -1,0 +1,78 @@
+.hero{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.first{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.8vw;
+    
+}
+
+.fest{
+    height: 3vh;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 5vw;
+}
+
+.theme{
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2.5vw;
+    
+}
+
+.theme-text{
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 0;
+    font-size: 2.5vw;
+}
+
+.details{
+   display: flex !important;
+   flex-direction: row !important;
+   
+   align-items: center !important;
+   justify-content: center !important;
+ 
+   
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+li{
+    margin-right: 2em;
+}
+
+.btn-group{
+    font-family: 'Rubik';
+    font-style: bold;
+    font-weight: 600;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.btn-hero{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1px;
+    padding: 1em;
+    font-size: 1.3vw; 
+    border: 0;
+    background-color: #D0D0D0;
+
+}

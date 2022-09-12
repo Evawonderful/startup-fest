@@ -1,0 +1,18 @@
+.countdiv {
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  @media screen and (max-width: 550px) {
+    .countdiv {
+      flex-direction: column;
+    }
+  }
+  
+  .time {
+    font-size: 2vw;
+  }
+  
