@@ -10,16 +10,16 @@ const daySeconds = 86400;
 
 const timerProps = {
   isPlaying: true,
-  size: 100,
-  strokeWidth: 3
+  size: 86,
+  strokeWidth: 1
 };
 
-const renderTime = (dimension, time) => {
+const renderTime = (theme, time) => {
   
   return (
     <div className="time-wrapper">
-      <div className="time">{time}</div>
-      <div>{dimension}</div>
+      <div className="time" style={{color: theme.timerColor}}>{time}</div>
+      {/* <div>{dimension}</div> */}
     </div>
   );
 };
@@ -40,22 +40,30 @@ export default function CountDown() {
   const [{theme, isDark}, toggleTheme] = useContext(ThemeContext);
 
   return (
-    <div className="countdiv">
+    <div className="countdiv time-wrapper">
+     <div className="time-wrapper">
       <CountdownCircleTimer
         {...timerProps}
-        colors={theme.timerColor}
+        colors={theme.progressColor}
         duration={daysDuration}
         initialRemainingTime={remainingTime}
+        
       >
         {({ elapsedTime, color }) => (
           <span style={{ color }}>
-            {renderTime("days", getTimeDays(daysDuration - elapsedTime))}
+            {renderTime(theme, getTimeDays(daysDuration - elapsedTime))}
+            
           </span>
         )}
       </CountdownCircleTimer>
-      <CountdownCircleTimer
+      <div style={{color: theme.timerColor}} className="dimension">DAYS</div>
+     </div>
+      
+
+      <div>
+        <CountdownCircleTimer
         {...timerProps}
-        colors={theme.timerColor}
+        colors={theme.progressColor}
         duration={daySeconds}
         initialRemainingTime={remainingTime % daySeconds}
         onComplete={(totalElapsedTime) => ({
@@ -64,13 +72,18 @@ export default function CountDown() {
       >
         {({ elapsedTime, color }) => (
           <span style={{ color }}>
-            {renderTime("hours", getTimeHours(daySeconds - elapsedTime))}
+            {renderTime(theme, getTimeHours(daySeconds - elapsedTime))}
+            
           </span>
         )}
       </CountdownCircleTimer>
-      <CountdownCircleTimer
+      <div style={{color: theme.timerColor}} className="dimension">HOURS</div>
+      </div>    
+      
+      <div className="time-wrapper">
+          <CountdownCircleTimer
         {...timerProps}
-        colors={theme.timerColor}
+        colors={theme.progressColor}
         duration={hourSeconds}
         initialRemainingTime={remainingTime % hourSeconds}
         onComplete={(totalElapsedTime) => ({
@@ -79,13 +92,17 @@ export default function CountDown() {
       >
         {({ elapsedTime, color }) => (
           <span style={{ color }}>
-            {renderTime("minutes", getTimeMinutes(hourSeconds - elapsedTime))}
+            {renderTime(theme, getTimeMinutes(hourSeconds - elapsedTime))}
           </span>
         )}
       </CountdownCircleTimer>
-      <CountdownCircleTimer
+      <div style={{color: theme.timerColor}} className="dimension">MINUTES</div>
+      </div>    
+    
+      <div className="time-wrapper">
+        <CountdownCircleTimer
         {...timerProps}
-        colors={theme.timerColor}
+        colors={theme.progressColor}
         duration={minuteSeconds}
         initialRemainingTime={remainingTime % minuteSeconds}
         onComplete={(totalElapsedTime) => ({
@@ -94,10 +111,13 @@ export default function CountDown() {
       >
         {({ elapsedTime, color }) => (
           <span style={{ color }}>
-            {renderTime("seconds", getTimeSeconds(elapsedTime))}
+            {renderTime(theme, getTimeSeconds(elapsedTime))}
           </span>
         )}
       </CountdownCircleTimer>
+      <div style={{color: theme.timerColor}} className="dimension">SECONDS</div>
+      </div>
+      
     </div>
   );
 }

@@ -7,7 +7,18 @@ const themes = {
         secondaryColor: "#2A9D8F",
         orangeBtn: "#FF9F1C",
         greenBtn: "#2A9D8F",
-        timerColor: "#2A9D8F"
+        timerColor: "#ffffff",
+        progressColor: "#2A9D8F",
+        vectorColor1 : "#94101F",
+        attendColor: "#FF9F1C",
+        aboutContainer: "rgba(52, 58, 64, 0.3)",
+        borderColor: "#D0D0D0",
+        imageBorder: "#2A9D8F",
+        keyNoteColor: "#2A9D8F",
+        tabBorder:"#FFFFFF",
+        activeTab: "#2A9D8F",
+        inactiveTab: "#485058"
+        
         
     },
 
@@ -15,8 +26,17 @@ const themes = {
         backgroundColor: "#FFFFFF",
         color: "#000000",
         timerColor: "#000000",
-        secondaryBtn: "#D0D0D0"
-
+        secondaryBtn: "#D0D0D0",
+        progressColor: "#000000",
+        vectorColor1: "#B8B8B8",
+        attendColor: "#B8B8B8",
+        aboutContainer: "rgba(255, 255, 255, 0.7)",
+        borderColor: "#474F56",
+        imageBorder: "#FFFFFF",
+        keyNoteColor: "#B8B8B8",
+        tabBorder: "#000000",
+        activeTab: "#B5AEAE",
+        inactiveTab: "#ffffff"
     }
 }
 

@@ -1,6 +1,7 @@
 .fabstyle{
-    bottom: 10% !important;
-    position: absolute !important;
-    left: 88%;
+    bottom: 10vh  !important;
+    position: sticky !important;
+    left: 90vw;
     color:  #212529 !important;
 }
+

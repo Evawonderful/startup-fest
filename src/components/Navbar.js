@@ -35,12 +35,12 @@ export default function Navbar() {
           />
         </svg>
       </span>
-      <div
+      <div 
         className={
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
         }
       >
-        <ul>
+        <ul style={{backgroundColor: theme.backgroundColor}}>
           <li>
             <a href="/">HOME</a>
           </li>

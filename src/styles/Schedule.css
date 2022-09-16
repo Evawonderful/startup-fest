@@ -1,0 +1,75 @@
+.tabs{
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+}
+
+.tab{
+    font-size: 1.3vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    border: 1px solid !important;
+    padding: 0.7rem;
+    width: 20%
+
+    
+}
+.tab2{
+    border-radius: 0px 10px 10px 0px;
+    border-left: 0 !important
+}
+.tab1{
+    border-radius: 10px 0px 0px 10px;
+    border-right : 0 !important
+}
+
+table{
+    margin: auto;
+    padding: 3rem;
+    width: 85%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 1px;
+   border-collapse: collapse
+}
+
+td{ 
+    border-bottom: 1px solid;
+    padding: 2rem;
+
+}
+
+.time{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1vw;
+    /* line-height: 2rem; */
+    text-transform: uppercase;
+}
+
+.activity{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2vw;
+    /* line-height: 2rem; */
+    text-align: left;
+}
+
+.description{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    text-align: left;
+    letter-spacing: 1px;
+    /* line-height: 25px; */
+}

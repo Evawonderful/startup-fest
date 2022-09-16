@@ -1,0 +1,29 @@
+.imageDiv{
+    margin: 2em;
+    padding: 2em;
+    display: grid;
+    row-gap: 2em;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+.keynote{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 4rem;
+}
+
+.keynote-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 2.4vw;
+    font-weight: 600;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
