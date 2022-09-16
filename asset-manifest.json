@@ -1,17 +1,25 @@
 {
   "files": {
-    "main.css": "/startup-fest/static/css/main.8edc4cf0.css",
-    "main.js": "/startup-fest/static/js/main.11c37b4b.js",
+    "main.css": "/startup-fest/static/css/main.bee1e11e.css",
+    "main.js": "/startup-fest/static/js/main.cddbfcc2.js",
     "static/js/787.30afcda2.chunk.js": "/startup-fest/static/js/787.30afcda2.chunk.js",
+    "static/media/aboutimg1.jpg": "/startup-fest/static/media/aboutimg1.c78b60c409463be46412.jpg",
+    "static/media/attendimg.jpg": "/startup-fest/static/media/attendimg.f7356c71b44784a4098d.jpg",
+    "static/media/speaker2.jpg": "/startup-fest/static/media/speaker2.6c0dd175df45784c12aa.jpg",
+    "static/media/speaker4.jpg": "/startup-fest/static/media/speaker4.f029b3f57689ca45cef3.jpg",
+    "static/media/speaker3.jpg": "/startup-fest/static/media/speaker3.a10f3e7d9d856b7151ab.jpg",
+    "static/media/speaker1.jpg": "/startup-fest/static/media/speaker1.a8568c3f4a9c090421ac.jpg",
     "static/media/logo-light.svg": "/startup-fest/static/media/logo-light.87d235e74456c5888ef0ca1e30c2184f.svg",
+    "static/media/sponsor1.jpg": "/startup-fest/static/media/sponsor1.ef7ab772e8ee1a86d85a.jpg",
     "static/media/logo-dark.svg": "/startup-fest/static/media/logo-dark.bbe03b5de5f5d9feb106dd042bad92bd.svg",
+    "static/media/sponsor3.jpg": "/startup-fest/static/media/sponsor3.7a45907c1f6c4fd82e02.jpg",
     "index.html": "/startup-fest/index.html",
-    "main.8edc4cf0.css.map": "/startup-fest/static/css/main.8edc4cf0.css.map",
-    "main.11c37b4b.js.map": "/startup-fest/static/js/main.11c37b4b.js.map",
+    "main.bee1e11e.css.map": "/startup-fest/static/css/main.bee1e11e.css.map",
+    "main.cddbfcc2.js.map": "/startup-fest/static/js/main.cddbfcc2.js.map",
     "787.30afcda2.chunk.js.map": "/startup-fest/static/js/787.30afcda2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8edc4cf0.css",
-    "static/js/main.11c37b4b.js"
+    "static/css/main.bee1e11e.css",
+    "static/js/main.cddbfcc2.js"
   ]
 }
